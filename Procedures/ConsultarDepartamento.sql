@@ -1,6 +1,6 @@
 #SQL
 CREATE PROCEDURE `ConsultarDepartamento` (
-	in Nombre varchar(20)
+	in Nombre varchar(100)
 )
 BEGIN
 	select * from departamento where departamento.nombre = Nombre;
@@ -14,7 +14,7 @@ DROP procedure IF EXISTS `ConsultarDepartamento`;
 DELIMITER $$
 USE `mydemodb`$$
 CREATE PROCEDURE `ConsultarDepartamento` (
-	in Nombre varchar(20)
+	in Nombre varchar(100)
 )
 BEGIN
 	select * from departamento where departamento.nombre = Nombre;
